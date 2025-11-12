@@ -18,8 +18,8 @@ class DurationDistribution(with_metaclass(abc.ABCMeta, Distribution)):
     @abc.abstractmethod
     def log_sf(self,x):
         '''
-        log survival function, defined by log_sf(x) = log(P[X \gt x]) =
-        log(1-cdf(x)) where cdf(x) = P[X \leq x]
+        log survival function, defined by log_sf(x) = log(P[X \\gt x]) =
+        log(1-cdf(x)) where cdf(x) = P[X \\leq x]
         '''
         pass
 

@@ -14,7 +14,7 @@ try:
     from pyhsmm.util.cstats import sample_crp_tablecounts, count_transitions
 except ImportError:
     from warnings import warn
-    warn('using slow transition counting')
+    # warn('using slow transition counting')
     from pyhsmm.util.stats import sample_crp_tablecounts, count_transitions
 
 # TODO separate out bayesian and nonbayesian versions?
